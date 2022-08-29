@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Mydog",
-            "content": "{ “cells”: [ { “cell_type”: “code”, “execution_count”: null, “metadata”: {}, “outputs”: [], “source”: [ “# “ ] } ], “metadata”: { “language_info”: { “name”: “python” }, “orig_nbformat”: 4 }, “nbformat”: 4, “nbformat_minor”: 2 } .",
-            "url": "https://qaisj1.github.io/quissite/2022/08/26/MyDog.html",
-            "relUrl": "/2022/08/26/MyDog.html",
+            "title": "My Dog",
+            "content": "This is my Dog . .",
+            "url": "https://qaisj1.github.io/quissite/markdown/2022/08/26/MyDog.html",
+            "relUrl": "/markdown/2022/08/26/MyDog.html",
             "date": " • Aug 26, 2022"
         }
         
