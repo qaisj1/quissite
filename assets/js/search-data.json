@@ -138,6 +138,17 @@
 
   
       ,"page1": {
+          "title": "Table",
+          "content": "&lt;/head&gt; HTML Table . Company Contact Country . Alfreds Futterkiste | Maria Anders | Germany | . Centro comercial Moctezuma | Francisco Chang | Mexico | . Ernst Handel | Roland Mendel | Austria | . Island Trading | Helen Bennett | UK | . Laughing Bacchus Winecellars | Yoshi Tannamuri | Canada | . Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy | . &lt;/html&gt; .",
+          "url": "https://qaisj1.github.io/quissite/Table/",
+          "relUrl": "/Table/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://qaisj1.github.io/quissite/about/",
@@ -169,7 +180,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://qaisj1.github.io/quissite/robots.txt",
