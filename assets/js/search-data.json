@@ -139,7 +139,7 @@
   
       ,"page1": {
           "title": "Table",
-          "content": "&lt;/head&gt; HTML Table . Company Contact Country . Alfreds Futterkiste | Maria Anders | Germany | . Centro comercial Moctezuma | Francisco Chang | Mexico | . Ernst Handel | Roland Mendel | Austria | . Island Trading | Helen Bennett | UK | . Laughing Bacchus Winecellars | Yoshi Tannamuri | Canada | . Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy | . &lt;/html&gt; .",
+          "content": "&lt;/head&gt; Table . Name Grade Grade in Comp Sci . Qais Jamili | 10th | B+ | . Mati Danish | 11th | B | . Nikhil Chakravarthula | 10th | B+ | . Vyaan Gautam | 10th | B | &lt;/table&gt; &lt;/html&gt; .",
           "url": "https://qaisj1.github.io/quissite/Table/",
           "relUrl": "/Table/",
           "date": ""
