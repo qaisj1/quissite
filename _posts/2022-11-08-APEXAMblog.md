@@ -4,9 +4,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "\n",
+    "\n",
     "# AP Exam Blog\n",
-    "\n",
-    "\n",
     "- toc: true \n",
     "- badges: true\n",
     "- comments: true\n",
