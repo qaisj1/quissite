@@ -124,3 +124,4 @@ feed:
   
 exclude:
   - settings.ini
+make server
