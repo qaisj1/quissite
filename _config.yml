@@ -124,3 +124,8 @@ feed:
   
 exclude:
   - settings.ini
+# Github and twitter are optional:
+minima:
+ # social_links:
+   # twitter: elonmusk
+   # github: qaisj1
