@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Performance Task Scoring 1",
-            "content": "Reporting Category Student Score College Board Score . Program Purpose and Function | | . Data Abstraction | | . Managing Complexity | | . Procedural Abstraction | | . Algorithm Implementation | | . Testing | | .",
-            "url": "https://qaisj1.github.io/quissite/2023/01/04/gradingforexam.html",
-            "relUrl": "/2023/01/04/gradingforexam.html",
+            "content": "Sample F . Reporting Category Student Score College Board Score Student Comments . Program Purpose and Function | 1 | 0 | Provided clear explanation of what the program is meant to do and how it can function based on a users input. | . Data Abstraction | 1 | 1 | 2 segments of code are shown and an explanation of how the code is implemented into the program is given. | . Managing Complexity | 0 | 0 | This way of managing complexity is inefficent | . Procedural Abstraction | 1 | 1 | Both program code segments provided and thorougly explained. | . Algorithm Implementation | 1 | 1 | Has explanation which could allow others to recreate the program. | . Testing | 1 | 1 | Each call result given with explanations of how they are tested. | . Sample A . Reporting Category Student Score College Board Score Student Comments . Program Purpose and Function | 1 | 1 | Game&#39;s purpose is clearly explained and how it is used is explained as well. | . Data Abstraction | 1 | 1 | 2 segments of code are shown and an explanation of how the code is implemented into the program is given. | . Managing Complexity | 1 | 1 | Explains how a list is used in the program and how it is the most efficent way to manage complexity. | . Procedural Abstraction | 1 | 1 | The program code segments are given and thorougly explained. | . Algorithm Implementation | 0 | 1 | Does not provide clear information which could help recreate program. | . Testing | 1 | 1 | Each call result given with explanations of how they are tested. | .",
+            "url": "https://qaisj1.github.io/quissite/jupyter/2023/01/04/gradingforexam.html",
+            "relUrl": "/jupyter/2023/01/04/gradingforexam.html",
             "date": " • Jan 4, 2023"
         }
         
