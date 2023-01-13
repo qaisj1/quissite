@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://qaisj1.github.io/quissite/jupyter/2022/01/11/Performancetask2.html</loc>
+<lastmod>2022-01-11T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://qaisj1.github.io/quissite/frontend/binary</loc>
 <lastmod>2022-07-07T00:00:00-05:00</lastmod>
 </url>
@@ -97,6 +101,10 @@
 <lastmod>2022-12-07T00:00:00-06:00</lastmod>
 </url>
 <url>
+<loc>https://qaisj1.github.io/quissite/jupyter/2022/12/09/VOCABULARY.html</loc>
+<lastmod>2022-12-09T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://qaisj1.github.io/quissite/jupyter/2022/12/14/Lesson15-16.html</loc>
 <lastmod>2022-12-14T00:00:00-06:00</lastmod>
 </url>
@@ -133,5 +141,8 @@
 </url>
 <url>
 <loc>https://qaisj1.github.io/quissite/page2/</loc>
+</url>
+<url>
+<loc>https://qaisj1.github.io/quissite/page3/</loc>
 </url>
 </urlset>
