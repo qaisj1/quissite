@@ -391,17 +391,6 @@
 
   
       ,"page1": {
-          "title": "Table",
-          "content": "&lt;/head&gt; Table . Name Grade Grade in Comp Sci . Qais Jamili | 10th | B+ | . Mati Danish | 11th | B | . Nikhil Chakravarthula | 10th | B+ | . Vyaan Gautam | 10th | B | &lt;/table&gt; &lt;/html&gt; .",
-          "url": "https://qaisj1.github.io/quissite/Table/",
-          "relUrl": "/Table/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page2": {
           "title": "About Me",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://qaisj1.github.io/quissite/about/",
@@ -440,7 +429,7 @@
   
 
   
-      ,"page14": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://qaisj1.github.io/quissite/robots.txt",
