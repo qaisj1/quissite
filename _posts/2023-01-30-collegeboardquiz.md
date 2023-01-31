@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: This is my dog. His name is Huncho
+description: COLLEGE BOARD QUIZ/TEST
 categories: [markdown]
-title: My Dog
+title: COLLEGE BOARD QUIZ
 ---
 
 ![Test]({{site.baseurl}}/images/bad.JPG)
