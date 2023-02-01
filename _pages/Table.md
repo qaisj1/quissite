@@ -1,8 +1,6 @@
 <!--Login Frontmatter-->
-## Workout Calender
-  - Helps you stay on top of your workouts
-  - Gets you organized
-  - Tracks your progress
+## Schedule
+
 <br>
 ## Editor Table
 <!-- Editor table-->
