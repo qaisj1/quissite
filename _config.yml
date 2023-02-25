@@ -38,12 +38,20 @@ baseurl: "/quissite" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-skin : dark
   #  social_links:
   #    twitter: NighthawkCoding
   #    github: nighthawkcoders
   #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
- 
+  social_links:
+    - { platform: github, user_url: ”
+https://github.com/nighthawkcoders
+“}
+    - { platform: twitter, user_url: ”
+https://twitter.com/NighthawkCoding
+“}
+    - { platform: youtube, user_url: ”
+https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
+“}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -52,7 +60,7 @@ use_math:
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: true
+show_image: false
 
 # Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
 annotations: false
