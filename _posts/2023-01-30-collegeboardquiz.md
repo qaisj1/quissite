@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: COLLEGE BOARD QUIZ/TEST
 categories: [markdown]
 title: COLLEGE BOARD QUIZ
