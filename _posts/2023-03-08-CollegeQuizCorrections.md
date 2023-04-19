@@ -372,6 +372,7 @@ Algorithm B</p>
 Algorithm C</p>
 <p>D (Correct Answer)
 Algorithm D</p>
+<h2 id="Reflection">Reflection<a class="anchor-link" href="#Reflection"> </a></h2><p>There isn't much to reflect over. I thought I did well on the quiz but unfortunately I did not. I will use these mistakes to better myself moving forward.</p>
 
 </div>
 </div>
