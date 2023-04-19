@@ -9,7 +9,6 @@ categories: []
 type: ap
 week: 29
 ---
-
 ## Requirements
 > Work through College Board Unit 4... blog, add definitions, and pictures.  Be creative, for instance make a story of Computing and Networks that is related to your PBL experiences this year.
 
@@ -39,7 +38,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 
 ### The Internet
-> Watch/review College Board Daily Video for 4.1.1
+> Watch/review College Board Daily Video for 4.1.123
 
 - Essential Knowledge
     - A computing device is a physical artifact that can run a program. Some examples include computers, tablets, servers, routers, and smart sensors.
