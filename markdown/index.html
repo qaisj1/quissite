@@ -4,21 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>App Ideas | QuisSite</title>
+<title>Schedule Maker | QuisSite</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="App Ideas" />
+<meta property="og:title" content="Schedule Maker" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Some ideas for an app." />
-<meta property="og:description" content="Some ideas for an app." />
-<link rel="canonical" href="https://qaisj1.github.io/quissite/jupyter/2022/09/15/App_Ideas.html" />
-<meta property="og:url" content="https://qaisj1.github.io/quissite/jupyter/2022/09/15/App_Ideas.html" />
+<meta name="description" content="A website that Qais made." />
+<meta property="og:description" content="A website that Qais made." />
+<link rel="canonical" href="https://qaisj1.github.io/quissite/markdown/" />
+<meta property="og:url" content="https://qaisj1.github.io/quissite/markdown/" />
 <meta property="og:site_name" content="QuisSite" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-15T00:00:00-05:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="App Ideas" />
+<meta property="twitter:title" content="Schedule Maker" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-15T00:00:00-05:00","datePublished":"2022-09-15T00:00:00-05:00","description":"Some ideas for an app.","headline":"App Ideas","mainEntityOfPage":{"@type":"WebPage","@id":"https://qaisj1.github.io/quissite/jupyter/2022/09/15/App_Ideas.html"},"url":"https://qaisj1.github.io/quissite/jupyter/2022/09/15/App_Ideas.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A website that Qais made.","headline":"Schedule Maker","url":"https://qaisj1.github.io/quissite/markdown/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/quissite/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://qaisj1.github.io/quissite/feed.xml" title="QuisSite" /><link rel="shortcut icon" type="image/x-icon" href="/quissite/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,70 +69,138 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">App Ideas</h1><p class="page-description">Some ideas for an app.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-15T00:00:00-05:00" itemprop="datePublished">
-        2022-09-15 00:00:00 -0500
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
+    <h1 class="post-title">Schedule Maker</h1>
+  </header>
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/quissite/categories/#jupyter">jupyter</a>
-        
-      
-      </p>
-    
+  <div class="post-content">
+    <h2 id="schedule-maker">Schedule Maker</h2>
+<ul>
+  <li>Add your activities</li>
+  <li>Organize your activities</li>
+  <li>Schedule times for activities
+<br />
+    <h2 id="create-a-schedule">Create A Schedule!</h2>
+  </li>
+</ul>
 
-    
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          
-          
-          
-          
-        </div>
-      </header>
+<table width="500px">
+  <tr>
+    <th><label for="input">Activities:</label></th>
+    <th><label for="week">Choose a Day:</label></th>
+    <th><button onclick="Reset()">Reset</button></th>
+    <th><button onclick="Save()">Save</button></th>
+  </tr>
+  <tr>
+    <td><input id="input" /></td>
+    <td>
+      <select name="week" id="week">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+    </td>
+    <td><button onclick="Add()">Apply</button></td>
+  </tr>
+</table>
+<p><br /></p>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2022-09-15-App_Ideas.ipynb
--->
+<table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+    <tr>
+    <td><div id="monday"></div></td>
+    <td><div id="tuesday"></div></td>
+    <td><div id="wednesday"></div></td>
+    <td><div id="thursday"></div></td>
+    <td><div id="friday"></div></td>
+    <td><div id="saturday"></div></td>
+    <td><div id="sunday"></div></td>
+  </tr>
+</table>
+<p><br /></p>
 
-<div class="container" id="notebook-container">
-        
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>An idea me and Mati have for an app is to create a game. A game which involves a 2 by 2 snake. The snake will increase everytime it touches a red block. You can control the snake with 4 buttons. You can use the up arrow, down arrow, left arrow, and right arrow as inputs.If the snake hits a border the player ultimately loses the game. The twist to the game is that there is no limit for how large you can get. You will keep growing until you hit yourself or one of the borders. The snake game fits the criteria because it has functioning inputs and outputs. The game has a loop which is what happens when you lose. You are able to go back to the start of the game. When you lose the game your highscore is kept on a dictionary which shows you your most recent and your highest score. Snake also has the prodcedural abstraction which is what happens when you click the start. The game also features sequencing when you lose the game it lets you restart. Input and output is part of the testing too. Startimg the game and restarting. Also moving the snake with the buttons. The purpose of the game is to cure boredom and make the world a better place.</p>
+<script>
+  function Add(){
+    var input = document.getElementById("input").value;
+    var week = document.getElementById("week").value;
+    var day = document.getElementById(week.toLowerCase());
+    day.innerHTML = day.innerHTML + "<br>" + input;
+  }
 
-</div>
-</div>
-</div>
-</div>
+// Reset function allowing user to reset the table
+// Local storage is wiped after reseting
+  function Reset(){
+    localStorage.clear();
+    location.reload();
+  }
+// Saves code into local storage 
+// Uses JSON.stringify for data storage
+// Notifies user with alert
+  function Save(){
+    var schedule = {
+      "Monday": document.getElementById("monday").innerHTML,
+      "Tuesday": document.getElementById("tuesday").innerHTML,
+      "Wednesday": document.getElementById("wednesday").innerHTML,
+      "Thursday": document.getElementById("thursday").innerHTML,
+      "Friday": document.getElementById("friday").innerHTML,
+      "Saturday": document.getElementById("saturday").innerHTML,
+      "Sunday": document.getElementById("sunday").innerHTML
+    };
+    localStorage.setItem("schedule", JSON.stringify(schedule));
+    alert("Your schedule has been saved.");
+  }
+
+// Loads saved data from local storage using getItem and JSON.parse
+// Grabs data from schedule and loads it after website is reloaded
+  function Load(){
+    var schedule = JSON.parse(localStorage.getItem("schedule"));
+    if(schedule){
+      document.getElementById("monday").innerHTML = schedule.Monday;
+      document.getElementById("tuesday").innerHTML = schedule.Tuesday;
+      document.getElementById("wednesday").innerHTML = schedule.Wednesday;
+      document.getElementById("thursday").innerHTML = schedule.Thursday;
+      document.getElementById("friday").innerHTML = schedule.Friday;
+      document.getElementById("saturday").innerHTML = schedule.Saturday;
+      document.getElementById("sunday").innerHTML = schedule.Sunday;
+    }
+  }
+
+  Load();
 
 
+// Parameters
+  var maxActivities = 10;
 
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="qaisj1/quissite"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/quissite/jupyter/2022/09/15/App_Ideas.html" hidden></a>
+  function Add(){
+    var input = document.getElementById("input").value;
+    var week = document.getElementById("week").value;
+    var day = document.getElementById(week.toLowerCase());
+
+    if (day.children.length >= maxActivities) {
+      alert("Maximum Activities Inputted.");
+      return;
+    }
+
+    day.innerHTML += "<br>" + input;
+  }
+</script>
+
+  </div>
+
 </article>
 
       </div>
