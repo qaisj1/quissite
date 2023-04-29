@@ -23,6 +23,28 @@ a:hover {
     color: $high-emph !important;
 }
 
+@mixin gradient-background($start-color, $end-color) {
+
+    background: $start-color;
+  
+    background: linear-gradient(to bottom, $start-color 0%, $end-color 100%);
+  
+  }
+  
+  // Use the mixin to create a class with a blue-to-purple gradient background
+  
+  .gradient-box {
+  
+    @include gradient-background(#4a89dc, #8e44ad);
+  
+    padding: 20px;
+  
+    border-radius: 5px;
+  
+    color: #fff;
+    
+  }
+
 .site-nav {
     background-color: $dark-grey;
     border-color: $overlay-light;
