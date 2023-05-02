@@ -17,10 +17,10 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: Processor Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz, 2401 Mhz, 2 Core(s), 4 Logical Processor(s)
+- Memory in GB: 8.00 GB
+- Storage in GB: 237 GB
+- OS: OS Name Microsoft Windows 10 Pro
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
 Input devices: Input devices are hardware components that enable users to enter data or instructions into a computer system. Common examples of input devices include keyboards, mice, touchscreens, scanners, and microphones.
