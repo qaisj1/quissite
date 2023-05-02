@@ -115,6 +115,9 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+1. C
+2. A
+- The internet is fault tolerant Network where devices can communicate with one another even if one path goes down. It’s important to have redundancy in your network, so that if one wire goes down, the other devices can still function because there is more than one path between connected devices.
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
