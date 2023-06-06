@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country Data Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Country Data Table</h1>
+
+  <input type="text" id="searchInput" placeholder="Search for a country...">
+
+  <table id="countryTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Name</th>
+        <th onclick="sortTable(1)">Population</th>
+        <th onclick="sortTable(2)">Area (sq. km)</th>
+        <th onclick="sortTable(3)">Capital</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script>
+    let countries = [];
+
+    // Fetch country data from REST Countries API
+    fetch('https://restcountries.com/v3/all')
+      .then(response => response.json())
+      .then(data => {
+        countries = data;
+        displayCountries(countries);
+      })
+      .catch(error => console.error(error));
+
+    function displayCountries(countries) {
+      const tableBody = document.getElementById('tableBody');
+      tableBody.innerHTML = '';
+
+      for (let i = 0; i < countries.length; i++) {
+        const country = countries[i];
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${country.name.common}</td>
+          <td>${country.population}</td>
+          <td>${country.area || 'N/A'}</td>
+          <td>${country.capital || 'N/A'}</td>
+        `;
+
+        tableBody.appendChild(row);
+      }
+    }
+
+    function sortTable(columnIndex) {
+      const table = document.getElementById('countryTable');
+      const rows = Array.from(table.rows);
+      const shouldSortAsNumber = columnIndex === 1 || columnIndex === 2;
+
+      rows.sort((rowA, rowB) => {
+        const cellA = rowA.cells[columnIndex].textContent.trim();
+        const cellB = rowB.cells[columnIndex].textContent.trim();
+
+        if (shouldSortAsNumber) {
+          return parseInt(cellA) - parseInt(cellB);
+        } else {
+          return cellA.localeCompare(cellB);
+        }
+      });
+
+      // Reattach the sorted rows to the table
+      for (let i = 0; i < rows.length; i++) {
+        table.appendChild(rows[i]);
+      }
+    }
+
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const query = this.value.trim().toLowerCase();
+      const filteredCountries = countries.filter(country =>
+        country.name.common.toLowerCase().includes(query)
+      );
+
+      displayCountries(filteredCountries);
+    });
+  </script>
+</body>
+</html>
