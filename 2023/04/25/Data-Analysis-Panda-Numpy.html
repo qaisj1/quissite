@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      23 min read
+      20 min read
     
 </span></p>
 
@@ -632,42 +632,21 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 24</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X32sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import numpy as np
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X32sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> padres = np.genfromtxt('files/padres.csv', delimiter=',', dtype=str, encoding='utf-8')
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X32sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> # delimiter indicates that the data is separated into columns which is distinguished by commas
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X32sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> # genfromtxt is used to read the csv file itself
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X32sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> # dtype is used to have numpy automatically detect the data type in the csv file
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X32sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> print(padres)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/npyio.py:1793</span>, in <span class="ansi-cyan-fg">genfromtxt</span><span class="ansi-blue-fg">(fname, dtype, comments, delimiter, skip_header, skip_footer, converters, missing_values, filling_values, usecols, names, excludelist, deletechars, replace_space, autostrip, case_sensitive, defaultfmt, unpack, usemask, loose, invalid_raise, max_rows, encoding, like)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1791</span>     fname = os_fspath(fname)
-<span class="ansi-green-intense-fg ansi-bold">   1792</span> if isinstance(fname, str):
-<span class="ansi-green-fg">-&gt; 1793</span>     fid = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-<span class="ansi-green-intense-fg ansi-bold">   1794</span>     fid_ctx = contextlib.closing(fid)
-<span class="ansi-green-intense-fg ansi-bold">   1795</span> else:
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py:193</span>, in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(path, mode, destpath, encoding, newline)</span>
-<span class="ansi-green-intense-fg ansi-bold">    156</span> """
-<span class="ansi-green-intense-fg ansi-bold">    157</span> Open `path` with `mode` and return the file object.
-<span class="ansi-green-intense-fg ansi-bold">    158</span> 
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    189</span> 
-<span class="ansi-green-intense-fg ansi-bold">    190</span> """
-<span class="ansi-green-intense-fg ansi-bold">    192</span> ds = DataSource(destpath)
-<span class="ansi-green-fg">--&gt; 193</span> return ds.open(path, mode, encoding=encoding, newline=newline)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py:533</span>, in <span class="ansi-cyan-fg">DataSource.open</span><span class="ansi-blue-fg">(self, path, mode, encoding, newline)</span>
-<span class="ansi-green-intense-fg ansi-bold">    530</span>     return _file_openers[ext](found, mode=mode,
-<span class="ansi-green-intense-fg ansi-bold">    531</span>                               encoding=encoding, newline=newline)
-<span class="ansi-green-intense-fg ansi-bold">    532</span> else:
-<span class="ansi-green-fg">--&gt; 533</span>     raise IOError("%s not found." % path)
-
-<span class="ansi-red-fg">OSError</span>: files/padres.csv not found.</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[['Name' ' Position' ' Average' ' HR' ' RBI' ' OPS' ' JerseyNumber']
+ ['Manny Machado' ' 3B' ' .298' ' 32' ' 102' ' .897' ' 13']
+ ['Fernando Tatis Jr' ' RF' ' .281' ' 42' ' 97' ' .975' ' 23']
+ ['Juan Soto' ' LF' ' .242' ' 27' ' 62' ' .853' ' 22']
+ ['Xander Bogaerts' ' SS' ' .307' ' 15' ' 73' ' .833' ' 2']
+ ['Nelson Cruz' ' DH' ' .234' ' 10' ' 64' ' .651' ' 32']
+ ['Matt Carpenter' ' DH' ' .305' ' 15' ' 37' ' 1.138' ' 14']
+ ['Jake Cronenworth' ' 1B' ' .239' ' 17' ' 88' ' .722' ' 9']
+ ['Ha-Seong Kim' ' 2B' ' .251' ' 11' ' 59' ' .708' ' 7']
+ ['Trent Grisham' ' CF' ' .184' ' 17' ' 53' ' .626' ' 1']
+ ['Luis Campusano' ' C' ' .250' ' 1' ' 5' ' .593' ' 12']
+ ['Austin Nola' ' C' ' .251' ' 4' ' 40' ' .649' ' 26']
+ ['Jose Azocar' ' OF' ' .257' ' 0' ' 10' ' .630' ' 28']]
+</pre>
 </div>
 </div>
 
@@ -707,39 +686,21 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/l
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 26</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X34sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import numpy as np
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X34sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> padres = np.loadtxt('files/padres.csv', delimiter=',', dtype=str, encoding='utf-8')
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X34sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> print(padres)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/npyio.py:1067</span>, in <span class="ansi-cyan-fg">loadtxt</span><span class="ansi-blue-fg">(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding, max_rows, like)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1065</span>     fname = os_fspath(fname)
-<span class="ansi-green-intense-fg ansi-bold">   1066</span> if _is_string_like(fname):
-<span class="ansi-green-fg">-&gt; 1067</span>     fh = np.lib._datasource.open(fname, 'rt', encoding=encoding)
-<span class="ansi-green-intense-fg ansi-bold">   1068</span>     fencoding = getattr(fh, 'encoding', 'latin1')
-<span class="ansi-green-intense-fg ansi-bold">   1069</span>     fh = iter(fh)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py:193</span>, in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(path, mode, destpath, encoding, newline)</span>
-<span class="ansi-green-intense-fg ansi-bold">    156</span> """
-<span class="ansi-green-intense-fg ansi-bold">    157</span> Open `path` with `mode` and return the file object.
-<span class="ansi-green-intense-fg ansi-bold">    158</span> 
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    189</span> 
-<span class="ansi-green-intense-fg ansi-bold">    190</span> """
-<span class="ansi-green-intense-fg ansi-bold">    192</span> ds = DataSource(destpath)
-<span class="ansi-green-fg">--&gt; 193</span> return ds.open(path, mode, encoding=encoding, newline=newline)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/lib/_datasource.py:533</span>, in <span class="ansi-cyan-fg">DataSource.open</span><span class="ansi-blue-fg">(self, path, mode, encoding, newline)</span>
-<span class="ansi-green-intense-fg ansi-bold">    530</span>     return _file_openers[ext](found, mode=mode,
-<span class="ansi-green-intense-fg ansi-bold">    531</span>                               encoding=encoding, newline=newline)
-<span class="ansi-green-intense-fg ansi-bold">    532</span> else:
-<span class="ansi-green-fg">--&gt; 533</span>     raise IOError("%s not found." % path)
-
-<span class="ansi-red-fg">OSError</span>: files/padres.csv not found.</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[['Name' ' Position' ' Average' ' HR' ' RBI' ' OPS' ' JerseyNumber']
+ ['Manny Machado' ' 3B' ' .298' ' 32' ' 102' ' .897' ' 13']
+ ['Fernando Tatis Jr' ' RF' ' .281' ' 42' ' 97' ' .975' ' 23']
+ ['Juan Soto' ' LF' ' .242' ' 27' ' 62' ' .853' ' 22']
+ ['Xander Bogaerts' ' SS' ' .307' ' 15' ' 73' ' .833' ' 2']
+ ['Nelson Cruz' ' DH' ' .234' ' 10' ' 64' ' .651' ' 32']
+ ['Matt Carpenter' ' DH' ' .305' ' 15' ' 37' ' 1.138' ' 14']
+ ['Jake Cronenworth' ' 1B' ' .239' ' 17' ' 88' ' .722' ' 9']
+ ['Ha-Seong Kim' ' 2B' ' .251' ' 11' ' 59' ' .708' ' 7']
+ ['Trent Grisham' ' CF' ' .184' ' 17' ' 53' ' .626' ' 1']
+ ['Luis Campusano' ' C' ' .250' ' 1' ' 5' ' .593' ' 12']
+ ['Austin Nola' ' C' ' .251' ' 4' ' 40' ' .649' ' 26']
+ ['Jose Azocar' ' OF' ' .257' ' 0' ' 10' ' .630' ' 28']]
+</pre>
 </div>
 </div>
 
@@ -769,15 +730,21 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/numpy/l
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 27</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> for i in padres:
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X35sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span>     print(",".join(i))
-
-<span class="ansi-red-fg">NameError</span>: name 'padres' is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name, Position, Average, HR, RBI, OPS, JerseyNumber
+Manny Machado, 3B, .298, 32, 102, .897, 13
+Fernando Tatis Jr, RF, .281, 42, 97, .975, 23
+Juan Soto, LF, .242, 27, 62, .853, 22
+Xander Bogaerts, SS, .307, 15, 73, .833, 2
+Nelson Cruz, DH, .234, 10, 64, .651, 32
+Matt Carpenter, DH, .305, 15, 37, 1.138, 14
+Jake Cronenworth, 1B, .239, 17, 88, .722, 9
+Ha-Seong Kim, 2B, .251, 11, 59, .708, 7
+Trent Grisham, CF, .184, 17, 53, .626, 1
+Luis Campusano, C, .250, 1, 5, .593, 12
+Austin Nola, C, .251, 4, 40, .649, 26
+Jose Azocar, OF, .257, 0, 10, .630, 28
+</pre>
 </div>
 </div>
 
@@ -1126,7 +1093,7 @@ dtype: float64
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7feff2bfc8b0&gt;
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7ff7cd90a400&gt;
 </pre>
 </div>
 </div>
@@ -1312,84 +1279,33 @@ The code is sorting a CSV file based on the 'Name' column in descending order an
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 49</span> in <span class="ansi-cyan-fg">&lt;cell line: 4&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import pandas as pd
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> #read csv and sort 'Duration' largest to smallest
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> df = pd.read_csv('files/padres.csv').sort_values(by=['Name'], ascending=False)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> print("--Duration Top 10---------")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> print(df.head(10))
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
-<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
-<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
-<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
-<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
-<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
-<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
-<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
-<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={"delimiter": ","},
-<span class="ansi-green-intense-fg ansi-bold">    677</span> )
-<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
-<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get("names", None))
-<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
-<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
-<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
-<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options["has_index_names"] = kwds["has_index_names"]
-<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
-<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = "rb"
-<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of "get_handle" matches argument types
-<span class="ansi-green-intense-fg ansi-bold">   1215</span> # "Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]"
-<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , "str", "bool", "Any", "Any", "Any", "Any", "Any"
-<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
-<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
-<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
-<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get("encoding", None),
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get("compression", None),
-<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get("memory_map", False),
-<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
-<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get("encoding_errors", "strict"),
-<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get("storage_options", None),
-<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
-<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
-<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
-<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support 'encoding' and 'newline'.
-<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and "b" not in ioargs.mode:
-<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
-<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
-<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
-<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
-<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
-<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
-<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline="",
-<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
-<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
-<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: 'files/padres.csv'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>--Duration Top 10---------
+                Name  Position   Average   HR   RBI    OPS   JerseyNumber
+3    Xander Bogaerts        SS     0.307   15    73  0.833              2
+8      Trent Grisham        CF     0.184   17    53  0.626              1
+4        Nelson Cruz        DH     0.234   10    64  0.651             32
+5     Matt Carpenter        DH     0.305   15    37  1.138             14
+0      Manny Machado        3B     0.298   32   102  0.897             13
+9     Luis Campusano         C     0.250    1     5  0.593             12
+2          Juan Soto        LF     0.242   27    62  0.853             22
+11       Jose Azocar        OF     0.257    0    10  0.630             28
+6   Jake Cronenworth        1B     0.239   17    88  0.722              9
+7       Ha-Seong Kim        2B     0.251   11    59  0.708              7
+--Duration Bottom 10------
+                 Name  Position   Average   HR   RBI    OPS   JerseyNumber
+4         Nelson Cruz        DH     0.234   10    64  0.651             32
+5      Matt Carpenter        DH     0.305   15    37  1.138             14
+0       Manny Machado        3B     0.298   32   102  0.897             13
+9      Luis Campusano         C     0.250    1     5  0.593             12
+2           Juan Soto        LF     0.242   27    62  0.853             22
+11        Jose Azocar        OF     0.257    0    10  0.630             28
+6    Jake Cronenworth        1B     0.239   17    88  0.722              9
+7        Ha-Seong Kim        2B     0.251   11    59  0.708              7
+1   Fernando Tatis Jr        RF     0.281   42    97  0.975             23
+10        Austin Nola         C     0.251    4    40  0.649             26
+Name,  Position,  Average,  HR,  RBI,  OPS,  JerseyNumber
+</pre>
 </div>
 </div>
 
@@ -1427,83 +1343,10 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 50</span> in <span class="ansi-cyan-fg">&lt;cell line: 4&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y100sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import pandas as pd
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y100sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> df = pd.read_csv("./files/housing.csv")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y100sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> mode_total_rooms = df['total_rooms'].mode()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y100sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> print(f"The mode of the 'total_rooms' column is: {mode_total_rooms}")
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
-<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
-<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
-<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
-<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
-<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
-<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
-<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
-<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={"delimiter": ","},
-<span class="ansi-green-intense-fg ansi-bold">    677</span> )
-<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
-<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get("names", None))
-<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
-<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
-<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
-<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options["has_index_names"] = kwds["has_index_names"]
-<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
-<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = "rb"
-<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of "get_handle" matches argument types
-<span class="ansi-green-intense-fg ansi-bold">   1215</span> # "Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]"
-<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , "str", "bool", "Any", "Any", "Any", "Any", "Any"
-<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
-<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
-<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
-<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get("encoding", None),
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get("compression", None),
-<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get("memory_map", False),
-<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
-<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get("encoding_errors", "strict"),
-<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get("storage_options", None),
-<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
-<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
-<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
-<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support 'encoding' and 'newline'.
-<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and "b" not in ioargs.mode:
-<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
-<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
-<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
-<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
-<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
-<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
-<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline="",
-<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
-<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
-<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: './files/housing.csv'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The mode of the 'total_rooms' column is: 0    1527.0
+Name: total_rooms, dtype: float64
+</pre>
 </div>
 </div>
 
@@ -1545,83 +1388,23 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 51</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y101sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import pandas as pd
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y101sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> df = pd.read_csv("./files/housing.csv")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y101sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> grouped_df = df.groupby('total_rooms')
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y101sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> agg_df = grouped_df.agg({'total_rooms': 'sum', 'population': 'mean', 'longitude': 'count'})
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>             total_rooms  population  longitude
+total_rooms                                    
+2.0                  2.0         6.0          1
+6.0                  6.0         8.0          1
+8.0                  8.0        13.0          1
+11.0                11.0        24.0          1
+12.0                12.0        18.0          1
+...                  ...         ...        ...
+30450.0          30450.0      9419.0          1
+32054.0          32054.0     15507.0          1
+32627.0          32627.0     28566.0          1
+37937.0          37937.0     16122.0          1
+39320.0          39320.0     16305.0          1
 
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
-<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
-<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
-<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
-<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
-<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
-<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
-<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
-<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={"delimiter": ","},
-<span class="ansi-green-intense-fg ansi-bold">    677</span> )
-<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
-<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get("names", None))
-<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
-<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
-<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
-<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options["has_index_names"] = kwds["has_index_names"]
-<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
-<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = "rb"
-<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of "get_handle" matches argument types
-<span class="ansi-green-intense-fg ansi-bold">   1215</span> # "Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]"
-<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , "str", "bool", "Any", "Any", "Any", "Any", "Any"
-<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
-<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
-<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
-<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get("encoding", None),
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get("compression", None),
-<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get("memory_map", False),
-<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
-<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get("encoding_errors", "strict"),
-<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get("storage_options", None),
-<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
-<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
-<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
-<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support 'encoding' and 'newline'.
-<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and "b" not in ioargs.mode:
-<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
-<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
-<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
-<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
-<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
-<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
-<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline="",
-<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
-<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
-<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: './files/housing.csv'</pre>
+[5926 rows x 3 columns]
+</pre>
 </div>
 </div>
 
@@ -1749,11 +1532,11 @@ The above exception was the direct cause of the following exception:
 
 <span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
 <span class="ansi-green-intense-fg ansi-bold">/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb Cell 54</span> in <span class="ansi-cyan-fg">&lt;cell line: 8&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y105sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> df = pd.read_csv('rugbyteam.csv')
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y105sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> # find min and max values of the "Age" column
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y105sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> min_age = np.min(df['Age'])
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y105sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> max_age = np.max(df['Age'])
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y105sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> print(f"Minimum age: {min_age}")
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y104sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> df = pd.read_csv('rugbyteam.csv')
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y104sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> # find min and max values of the "Age" column
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y104sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> min_age = np.min(df['Age'])
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y104sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> max_age = np.max(df['Age'])
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/qaisjamili/vscode/quissite/_notebooks/2023-04-25-Data-Analysis-Panda-Numpy.ipynb#Y104sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> print(f"Minimum age: {min_age}")
 
 File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py:3505</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
 <span class="ansi-green-intense-fg ansi-bold">   3503</span> if self.columns.nlevels &gt; 1:
