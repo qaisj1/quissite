@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Api",
-            "content": "&lt;!DOCTYPE html&gt; . Country Data Table . Country Data Table . Name Population Area (sq. km) Capital . .",
+            "content": "layout: base . &lt;!DOCTYPE html&gt; . Country Data Table . Country Data Table . Name Population Area (sq. km) Capital . .",
             "url": "https://qaisj1.github.io/quissite/2023/06/06/api.html",
             "relUrl": "/2023/06/06/api.html",
             "date": " • Jun 6, 2023"
