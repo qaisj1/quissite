@@ -94,5 +94,27 @@
         const cellA = rowA.cells[columnIndex].textContent.trim();
         const cellB = rowB.cells[columnIndex].textContent.trim();
 
-        return cellA.localeCompare(cell
-</script></body></html>
+        return cellA.localeCompare(cellB); // Sort string values
+      });
+
+      // Reattach the sorted rows to the table
+      for (let i = 0; i < rows.length; i++) {
+        table.appendChild(rows[i]);
+      }
+    }
+
+    // Add event listener to the search input field
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const query = this.value.trim().toLowerCase();
+      const filteredConcepts = physicsData.filter(concept =>
+        concept.concept.toLowerCase().includes(query) ||
+        concept.description.toLowerCase().includes(query) ||
+        concept.symbol.toLowerCase().includes(query) ||
+        concept.unit.toLowerCase().includes(query)
+      );
+
+      displayConcepts(filteredConcepts); // Display the filtered concepts in the table
+    });
+  </script>
+</body>
+</html>
